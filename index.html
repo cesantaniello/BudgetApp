@@ -7,24 +7,24 @@
     <title>Budget App</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body onload="cargarApp()">
     <div class="cabecero">
         <div class="presupuesto">
             <div class="presupuesto_titulo">
                 Presupuesto disponible
             </div>
-            <div class="presupuesto_valor">
+            <div class="presupuesto_valor" id="presupuesto">
                 € 2.000
             </div>
             <div class="presupuesto_ingreso limpiarEstilos">
-                <div class="presupuesto_ingreso--texto">
+                <div class="presupuesto_ingreso--texto" id="ingresos">
                     Ingresos
                 </div>
                 <div class="derecha">
-                    <div class="presupuesto_ingreso--valor">
+                    <div class="presupuesto_ingreso--valor" id="egresos">
                         + 1.000
                     </div>
-                    <div class="presupuesto_ingreso--porcentaje">
+                    <div class="presupuesto_ingreso--porcentaje" id="porcentaje">
                         &nbsp;
                     </div>
                 </div>
